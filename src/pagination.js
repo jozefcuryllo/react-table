@@ -13,13 +13,13 @@ export default class ReactTablePagination extends Component {
     PreviousComponent: defaultButton,
     NextComponent: defaultButton,
     renderPageJump: ({
-      onChange, value, onBlur, onKeyPress, inputType, pageJumpText,
+      onChange, onInput, value, onBlur, onKeyPress, inputType, pageJumpText,
     }) => (
       <div className="-pageJump">
         <input
           aria-label={pageJumpText}
           type={inputType}
-          onChange={onChange}
+          onInput={onChange}
           value={value}
           onBlur={onBlur}
           onKeyPress={onKeyPress}
